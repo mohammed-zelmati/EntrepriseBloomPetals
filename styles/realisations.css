@@ -11,31 +11,38 @@ body {
     color: #333;
 }
 
-
 header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding:10px 20px; 
     background-color: #0056b3;
     color: #fff;
-    padding: 20px;
-    text-align: center;
 }
-
-header .liens {
+.menu-icon { 
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer;
+ }
+.liens {
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-header .liens a {
-    color: #fff;
+.liens a {
+    color: #efebeb;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 20px;
+    font-size: 1.5em;
+    border-top:1px solid #444;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-header .liens a:hover {
-    background-color: #004494;
+.liens a:hover {
+    background-color: #dfee08;
+}
+
+#menu-toggle { 
+    display: none;
 }
 
 h1 {
@@ -106,9 +113,30 @@ footer p {
 /* Media Queries */
 
 /* Styles pour les petits appareils (téléphones) */
-@media (max-width: 767px) {
-    header .liens {
+@media (max-width: 768px) {
+    .menu-icon { 
+        display: block;
+        margin-left: 20px; 
+    }
+    .liens {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 60px;
+        background-color: #4046ef;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .liens a {
+         padding: 10px 20px; 
+         border-top: 1px solid #310505;
+        }
+
+    /* Afficher le menu lorsque la checkbox est cochée */
+    #menu-toggle:checked + .menu-icon + .liens {
+        display: flex;
     }
     
     .mosaic-item {
