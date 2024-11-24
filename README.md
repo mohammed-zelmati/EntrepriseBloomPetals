@@ -1,12 +1,12 @@
 Ce projet est fait pour l'interface des pages de site de l'entreprise BloomPetals en html et css flexbox avec media queries
-, il est demandé de ne traiter que la partie de frontdu projet:
+, il est demandé de ne traiter que la partie de front du projet:
 
 BloomPetals est une entreprise passionnée et créative spécialisée dans la
 conception de magnifiques bouquets floraux pour embellir vos événements
 spéciaux. Que ce soit un mariage, un anniversaire, une réception ou toute
 autre occasion festive.
 L’équipe marketing de l’enseigne BloomPetals connaît l’importance d’être
-présente sur la toile, elle a besoin que vous lui créez des pages web.
+présente sur la toile, elle a besoin que nous lui créons des pages web.
 Elle nous a mis à disposition une maquette pour la page d’accueil ainsi que
 des images, mais ne possède pas le temps de Nous fournir les maquettes des
 autres pages.
